@@ -1,0 +1,58 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: #b2ebf2;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+}
+
+.burger_btn {
+  display: block;
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+}
+
+.header_menu {
+  display: none;
+
+  li {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: #0288d1;
+    }
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .logo {
+    display: inline-block;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    background-color: white;
+  }
+
+  .burger_btn {
+    display: none;
+  }
+
+  .header_menu {
+    display: flex;
+    gap: 20px;
+
+    list-style: none;
+  }
+
+  .header_menu_wrapper {
+    margin: auto;
+  }
+}
