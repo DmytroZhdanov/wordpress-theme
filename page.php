@@ -4,10 +4,12 @@ Template Name: Home Page
 Template Post Type: page
 */
 
-get_header(); ?>
+get_header();
+
+?>
 
 <main>
-  <h1>Hello</h1>
+  <?php get_template_part("template-parts/hero"); ?>
 </main>
 
 <?php get_footer(); ?>

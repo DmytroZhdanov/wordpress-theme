@@ -29,4 +29,12 @@
         "container_class" => "header_menu_wrapper"
       ]); ?>
     </div>
+
+    <?php
+    $show_warning = get_field("show_warning");
+    if ($show_warning <> "") :
+      $warning_text = get_field("warning_text");
+    ?>
+      <div class="warning_banner"><?php echo $warning_text; ?></div>
+    <?php endif; ?>
   </header>

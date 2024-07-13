@@ -1,8 +1,9 @@
+@import "../utils/variables";
+
 .header {
   padding-top: 20px;
-  padding-bottom: 20px;
 
-  background-color: #b2ebf2;
+  background-color: $background_primary;
 }
 
 .header_container {
@@ -21,12 +22,22 @@
   display: none;
 
   li {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color $transition_dur_and_func;
 
     &:hover {
-      color: #0288d1;
+      color: $link_hover;
     }
   }
+}
+
+.warning_banner {
+  margin-top: 20px;
+  padding: 12px;
+
+  font-size: 14px;
+  text-align: center;
+
+  background-color: #f6f6f6;
 }
 
 @media screen and (max-width: 1439px) {

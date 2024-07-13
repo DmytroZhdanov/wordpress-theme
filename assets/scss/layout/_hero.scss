@@ -1,0 +1,223 @@
+@import "../utils/variables";
+
+.hero {
+  padding: 20px;
+
+  color: white;
+  background: $background_hero;
+}
+
+// .hero_container {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+.information_content {
+  display: flex;
+  // align-items: start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.promo_logo {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.hero_title {
+  margin-bottom: 8px;
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.rating_list {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.rating_item_icon {
+  width: 24px;
+  height: 24px;
+}
+
+.hero_description {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.promo_info {
+  display: flex;
+  align-items: center;
+  // justify-content: space-evenly;
+
+  width: 100%;
+
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.verified_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  width: 248px;
+  margin-right: 8px;
+  padding: 8px;
+
+  border-radius: 8px;
+
+  color: $text;
+  background-color: #b3e5fc;
+}
+
+.promo_container {
+  background-color: rgba(0, 0, 0, 0.3);
+
+  border-radius: 6px;
+
+  & > div,
+  & > ul {
+    padding: 20px;
+  }
+}
+
+.promo_code_wrapper,
+.condition_list {
+  border-bottom: 1px dashed white;
+}
+
+.promo_code_container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  width: 100%;
+  padding: 6px;
+
+  background: linear-gradient(
+    135deg,
+    #e1f5fe 25%,
+    #b3e5fc 25%,
+    #b3e5fc 50%,
+    #e1f5fe 50%,
+    #e1f5fe 75%,
+    #b3e5fc 75%,
+    #b3e5fc 100%
+  );
+  background-size: 100px 100px;
+
+  & > p {
+    width: 100%;
+
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+
+    color: $text;
+  }
+}
+
+.copy_promo_code_btn {
+  padding: 8px 20px;
+
+  font-size: 20px;
+
+  border: none;
+  border-radius: 6px;
+
+  color: white;
+  background-color: #2196f3;
+
+  cursor: pointer;
+  transition: background-color $transition_dur_and_func;
+
+  &:is(:hover, :focus) {
+    background-color: #1976d2;
+    outline: none;
+  }
+}
+
+.condition_list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  font-size: 14px;
+}
+
+.condition_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  & > p {
+    text-align: center;
+  }
+}
+
+.bonus_link {
+  display: block;
+  padding: 10px;
+
+  border-radius: 8px;
+
+  text-align: center;
+
+  background-color: $green;
+  transition: background-color $transition_dur_and_func;
+
+  &:is(:hover, :focus) {
+    background-color: $green_hover;
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .information_content {
+    justify-content: center;
+  }
+
+  .promo_info {
+    justify-content: space-evenly;
+  }
+
+  .promo_code_container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .verified_container {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .verified_container {
+    flex-wrap: nowrap;
+  }
+
+  .promo_container > div,
+  .promo_container > ul {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  // .information_content {
+  //   align-items: start;
+  // }
+}
