@@ -1,6 +1,6 @@
 <?php
 $show_hero = get_field("show_hero");
-if (!$show_hero) return;
+if (!is_admin() && !$show_hero) return;
 
 $logo = get_field("logo");
 $hero_title = get_field("hero_title");

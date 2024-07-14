@@ -11,3 +11,6 @@ require get_template_directory() . "/inc/_custom.php";
 
 // Register menu
 require get_template_directory() . "/inc/_menus.php";
+
+// ACF
+require get_template_directory() . "/inc/_acf.php";
