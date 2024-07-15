@@ -11,7 +11,6 @@ function test_scripts()
     );
 
     //Scripts
-    wp_enqueue_script("jquery");
     wp_enqueue_script(
         "test-script",
         get_template_directory_uri() . "/assets/js/app.min.js",

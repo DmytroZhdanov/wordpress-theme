@@ -7,15 +7,8 @@
   background: $background_hero;
 }
 
-// .hero_container {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-// }
-
 .information_content {
   display: flex;
-  // align-items: start;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -51,7 +44,6 @@
 .promo_info {
   display: flex;
   align-items: center;
-  // justify-content: space-evenly;
 
   width: 100%;
 
@@ -72,7 +64,7 @@
 
   border-radius: 8px;
 
-  color: $text;
+  color: $text-primary;
   background-color: #b3e5fc;
 }
 
@@ -119,7 +111,7 @@
     font-weight: 600;
     text-align: center;
 
-    color: $text;
+    color: $text-primary;
   }
 }
 
@@ -214,10 +206,4 @@
   .promo_container > ul {
     width: 360px;
   }
-}
-
-@media screen and (min-width: 1440px) {
-  // .information_content {
-  //   align-items: start;
-  // }
 }

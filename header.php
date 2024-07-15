@@ -12,7 +12,7 @@
 <body>
   <header class="header">
     <div class="container header_container">
-      <button type="button" class="burger_btn">
+      <button type="button" class="burger_btn open_mob_menu" aria-label="Abrir menú móvil">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/burger.svg" alt="burger">
       </button>
 
@@ -37,4 +37,21 @@
     ?>
       <div class="warning_banner"><?php echo $warning_text; ?></div>
     <?php endif; ?>
+
+    <div class="mobile_menu">
+      <div class="mob_menu_container">
+        <button type="button" aria-label="Cerrar menú móvil" class="mob_menu_close_btn close_mob_menu">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/close.svg" alt="close">
+        </button>
+
+        <?php
+        wp_nav_menu([
+          "theme_location" => "header_menu",
+          "menu_id" => "mobile-menu",
+          "menu_class" => "mobile_menu_list",
+          "container" => "nav",
+          "container_class" => "mobile_menu_wrapper"
+        ]); ?>
+      </div>
+    </div>
   </header>
