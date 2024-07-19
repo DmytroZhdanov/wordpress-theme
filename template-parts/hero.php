@@ -2,7 +2,7 @@
 $show_hero = get_field("show_hero");
 if (!is_admin() && !$show_hero) return;
 
-$logo = get_field("logo");
+$hero_logo = get_field("hero_logo");
 $hero_title = get_field("hero_title");
 $hero_description = get_field("hero_description");
 $validation_date = get_field("validation_date");
@@ -16,7 +16,7 @@ $bonus_link = get_field("bonus_link");
 <section id="hero" class="hero">
   <div class="container hero_container">
     <div class="information_content">
-      <img src="<?php echo $logo; ?>" alt="logo" class="promo_logo">
+      <img src="<?php echo $hero_logo; ?>" alt="logo" class="promo_logo">
 
       <div>
         <h1 class="hero_title"><?php echo $hero_title; ?></h1>
