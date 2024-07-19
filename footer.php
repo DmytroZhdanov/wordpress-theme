@@ -52,28 +52,6 @@ if ($show_footer) :
         </ul>
       <?php endif; ?>
 
-      <!-- <ul class="footer_logos">
-        <li>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/18.svg" alt="18+">
-        </li>
-
-        <li>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/jogo_responsavle.svg" alt="jogo responsavle">
-        </li>
-
-        <li>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/apostas_seguras.svg" alt="apostas seguras">
-        </li>
-
-        <li>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/virando_jogo.svg" alt="virando jogo">
-        </li>
-
-        <li>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ja.svg" alt="ja">
-        </li>
-      </ul> -->
-
       <p class="copyright_text"><?php echo $copyright_text; ?></p>
     </div>
   </footer>
